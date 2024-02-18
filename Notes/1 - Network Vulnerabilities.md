@@ -14,5 +14,10 @@ Estas vulnerabilidades são documentadas em:
 - `CVE`: Common Vulnerabilities and Exposures;
 - `CPE`: Common Plataform Enumeration;
 
+Há dois conceitos essenciais nos ataques:
+
+- `Sniffing`: receber ethernet frames da rede;
+- `Spoofing`: criação de frames IP, UDP, ..., e enviá-los ou injectá-los pela rede;
+
 ## Network vulnerabilities examples
 
