@@ -59,7 +59,8 @@ Permitia que qualquer máquina windows fosse explorada, com remote code executio
 
 ### LAN denial (LAND)
 
-As implementações não prevêm que o source/destination fossem iguais. Isto causava exaustão dos sistemas, ciclos infinitos, entre outros.
+As implementações não previam que o source/destination fossem iguais. Isto causava exaustão dos sistemas, ciclos infinitos, entre outros.
 
 ### Echo-Chargen Attack
 
+Echo retorna, para cada mensagem, uma cópia do request original. Assim, um Chargen/UDP cria um loop de replies de echo, pois houve um spoofed do IP.
