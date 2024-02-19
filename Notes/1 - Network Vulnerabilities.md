@@ -55,3 +55,11 @@ EM TLS existem sessões, com possibilidade de existência de heartbeats para man
 
 ### EternalBlue
 
+Permitia que qualquer máquina windows fosse explorada, com remote code execution envolvendo bugs e sessões nulas.
+
+### LAN denial (LAND)
+
+As implementações não prevêm que o source/destination fossem iguais. Isto causava exaustão dos sistemas, ciclos infinitos, entre outros.
+
+### Echo-Chargen Attack
+
