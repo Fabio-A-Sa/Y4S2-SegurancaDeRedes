@@ -13,4 +13,3 @@
 ## Threat Model
 
 Para cada ativo, imaginar como, em que condições e qual a probabilidade de um atacante pode comprometer esse ativo. Tudo depende do CIA (confidencialidade, integridade, autenticidade) que se queira, o que tem sempre custos (*security by design*).
-
