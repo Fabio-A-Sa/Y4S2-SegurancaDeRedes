@@ -1,6 +1,6 @@
 # Lab N1 - Sniffing and Spoofing - Task 1.4
 
-The he Address Resolution Protocol (ARP) is responsible for mapping IP addresses to physical MAC addresses, enabling communication between devices in the network. In the current scenario, when using the ping command, it generates an ICMP echo request packet, which relies on ARP to determine the destination for the reply, as shown in the attached screenshots.
+The Address Resolution Protocol (ARP) is responsible for mapping IP addresses to physical MAC addresses, enabling communication between devices in the network. In the current scenario, when using the ping command, it generates an ICMP echo request packet, which relies on ARP to determine the destination for the reply, as shown in the attached screenshots.
 
 The host 1.2.3.4, although it does not exist on the internet, has an IP mapping in its routing table (identified using the command ip route get 1.2.3.4) via the host 10.9.0.1. Therefore, ARP resolution exists, allowing packet transfer from 1.2.3.4 through the host 10.9.0.1. However, without the sniffing-spoofing program, it fails to receive the ICMP packet reply because 1.2.3.4 is not alive. Conversely, with the program active, the expected ICMP reply was observed, indicating the success of the attack.
 
