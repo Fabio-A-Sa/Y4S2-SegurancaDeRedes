@@ -1,6 +1,6 @@
-# TCP Sequence number attacks
+# TCP Vulnerabilities
 
-O TCP SYN flooding é um tipo de vulnerabilidade em TCP, já abordado anteriormente:
+Especialmente os sequence number attacks. O TCP SYN flooding é um tipo de vulnerabilidade em TCP, já abordado anteriormente:
 
 O servidor fica indisponível quando o atacante envia muitos pedidos SYN, pois fica sem memória para guardar o estado de todas as ligações. Aí as ligações TCP legítimas não são atendidas. 
 
