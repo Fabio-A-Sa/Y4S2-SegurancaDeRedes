@@ -12,13 +12,19 @@ Através de portas ou networks não usadas e portanto não rastreáveis. Pode ha
 
 ## Same LAN access
 
-
+Se o atacante tiver acesso à Ethernet layer. Então, diferentes users, com diferentes roles, devem estar em LANs diferentes, usando sub-networks. No entanto, por motivos de carga, não devemos ter uma VLAN por cada utilizador.
 
 ## IP Routing Access
 
+Devemos restringir routing all-to-all, permitindo criar uma lista de controlo de acessos de tráfico entre IPs addresses.
+
 ## Service Access
 
+Os serviços às vezes são vulneráveis a ataques com UDP e TCP. Pode ser prevenido com Router ACLs ou Firewalls, a explorar mais à frente.
+
 ## End-user device and VM isolation
+
+O próprio end-user pode ser comprometido, pelo que é importante ter uma network de quarentena, hypervisors, VMs e treinamento pessoal dos utilizadores.
 
 ## Zero Trust Security
 
