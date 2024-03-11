@@ -28,3 +28,10 @@ O próprio end-user pode ser comprometido, pelo que é importante ter uma networ
 
 ## Zero Trust Security
 
+The Zero Trust security model ensures that no user or device, whether inside or outside the organization's network, is automatically trusted, emphasizing continuous verification and validation of access requests Characteristics:
+
+- `Continuous Verification`: Users and devices are consistently authenticated and authorized, with adaptive multi-factor authentication;
+
+- `Intelligent Access Limitation`: Access to resources is restricted based on user roles and device configurations, ensuring functional efficiency;
+
+- `Dynamic Adaptation`: The model emphasizes continuous improvement and adaptation to evolving threats, supported by regular updates and feedback systems;
