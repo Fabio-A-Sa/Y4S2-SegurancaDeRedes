@@ -14,11 +14,11 @@ Regras Exemplificativas do iptables: Algumas regras comuns incluem definir polí
 
 ### Netfilter, Ebtables, Ebpf
 
-Netfilter é a estrutura no kernel Linux que permite manipular pacotes de rede, enquanto Ebtables é equivalente ao iptables, mas para pontes Ethernet, e eBPF permite que código isolado seja executado no kernel para estender suas capacidades.
+`Netfilter` é a estrutura no kernel Linux que permite manipular pacotes de rede com comandos INPUT, OUTPUT, FWD, PRER., POSTR, enquanto `Ebtables` é equivalente ao iptables, mas para pontes Ethernet, e `eBPF` permite que código isolado seja executado no kernel para estender suas capacidades em *sandboxing*.
 
 ### Stateless vs. Stateful
 
-Os firewalls podem operar de forma stateless, aplicando regras a cada pacote individualmente, ou stateful, lembrando pacotes relacionados anteriores.
+Os firewalls podem operar de forma `stateless`, aplicando regras a cada pacote individualmente, ou `stateful`, lembrando pacotes relacionados anteriores. Em stateless não pode fazer duas coisas ao mesmo tempo: ou aceita DNS replies na porta X ou previne respostas não solicitadas da mesma porta. Por outro lado, o stateful tem de fazer store de mais informação, e por prevenção apenas aceita incoming packets if they belong to outbound TCP stream.
 
 Arquiteturas de Implantação de Firewall
 
@@ -28,7 +28,9 @@ Outros Tipos de Firewall
 
 Existem também firewalls de nível de pacote, de nível de transporte/circuito e de aplicação.
 
-VPN
+
+
+## VPN
 
 As VPNs criam redes virtuais sobre outras redes para proteger o conteúdo criptograficamente e fornecer acesso remoto seguro aos recursos da rede corporativa.
 
