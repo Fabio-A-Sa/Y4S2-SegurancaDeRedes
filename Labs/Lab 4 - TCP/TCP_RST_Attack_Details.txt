@@ -7,4 +7,4 @@ TCP RST Attack Details
 - Sequence Number: 1466803788
 - TCP Flag: R
 
-Names: Fábio Sá, Inês Gaspar
+Names: Fábio Sá (up202007658@up.pt), Inês Gaspar (up202007210@up.pt)
