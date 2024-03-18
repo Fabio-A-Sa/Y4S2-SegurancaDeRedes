@@ -1,0 +1,10 @@
+TCP RST Attack Details
+
+- Source IP: 10.9.0.5
+- Destination IP: 10.9.0.6
+- Source Port: 48262
+- Destination Port: 23
+- Sequence Number: 1466803788
+- TCP Flag: R
+
+Names: Fábio Sá, Inês Gaspar
