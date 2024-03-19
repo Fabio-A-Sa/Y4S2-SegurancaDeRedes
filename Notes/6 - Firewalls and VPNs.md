@@ -20,15 +20,22 @@ Regras Exemplificativas do iptables: Algumas regras comuns incluem definir polí
 
 Os firewalls podem operar de forma `stateless`, aplicando regras a cada pacote individualmente, ou `stateful`, lembrando pacotes relacionados anteriores. Em stateless não pode fazer duas coisas ao mesmo tempo: ou aceita DNS replies na porta X ou previne respostas não solicitadas da mesma porta. Por outro lado, o stateful tem de fazer store de mais informação, e por prevenção apenas aceita incoming packets if they belong to outbound TCP stream.
 
-Arquiteturas de Implantação de Firewall
+### Arquiteturas de Implantação de Firewall
 
-Existem várias arquiteturas de implantação de firewall, incluindo roteador externo, gateway de várias interfaces, bastião, entre outros.
+- `Roteador externo`: Força o tráfego externo de entrada através do firewall.
+- `Gateway de duas interfaces`: O roteador externo envia o tráfego para o host do firewall com interfaces interna e externa; a interface interna conectada à LAN interna.
+- `Roteador de filtragem`, hospedeiro bastião: O roteador externo roteia todo o tráfego para o host do firewall com uma única interface.
+- `Roteador interno`: Força o tráfego interno de saída através do firewall.
+- `Rede filtrada`: Semelhante ao gateway de duas interfaces, exceto que a interface interna do firewall está conectada à rede DMZ, incluindo o roteador interno.
+- `Firewall duplo`: Semelhante à rede filtrada, com um segundo firewall antes do roteador interno.
 
-Outros Tipos de Firewall
+Existem também firewalls de nível de pacote, de nível de transporte/circuito e de aplicação. As firewalls funcionam como `egress` (proxy para internet access) ou como `ingress` (load balancing para redirecionamento TCP para diferentes internal servers).
 
-Existem também firewalls de nível de pacote, de nível de transporte/circuito e de aplicação.
+Além disso, as Firewalls funcionam como:
 
-
+- Access control;
+- Content filtering and modifying;
+- Content logging and caching;
 
 ## VPN
 
