@@ -41,7 +41,7 @@ Além disso, as Firewalls funcionam como:
 
 As VPNs criam redes virtuais sobre outras redes para proteger o conteúdo criptograficamente e fornecer acesso remoto seguro aos recursos da rede corporativa.
 
-Tipos de VPN Host-to-Net
+### VPN Host-to-Net
 
 As VPNs de host para rede podem operar como túneis IP ou pontes Ethernet.
 
