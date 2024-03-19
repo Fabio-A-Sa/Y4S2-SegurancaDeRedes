@@ -43,13 +43,12 @@ As VPNs criam redes virtuais sobre outras redes para proteger o conteúdo cripto
 
 ### VPN Host-to-Net
 
-As VPNs de host para rede podem operar como túneis IP ou pontes Ethernet.
+As VPNs de host para rede podem operar como `túneis IP` (funcionam como routers virtuais) ou `pontes Ethernet` (funcionam como switches virtuais).
 
-Ameaças à VPN
+### Ameaças à VPN
 
 As ameaças à segurança da VPN incluem falhas na autenticação, vulnerabilidades de protocolo e comprometimento de chaves de usuário.
 
-VPNs Não Convencionais
+### VPNs Não Convencionais
 
 Existem VPNs não convencionais que encapsulam pacotes em protocolos não relacionados à VPN, como DNS, HTTP ou SMTP, para passar por firewalls mais restritivos.
-
