@@ -1,4 +1,4 @@
-# Intrusion Detection
+# Intrusion Detection (Systems)
 
 Os intrusos podem ser detectados:
 
@@ -7,4 +7,7 @@ Os intrusos podem ser detectados:
 
 Podem ser ambos tratados na perspectiva de detecção e de prevenção.
 
-Saber o que verificar para ocorrer ou não um ataque. Pode ser **knowledge-based**, já com conhecimento prévio ou **behavior-based**, aprendendo com os dados disponíveis.
+Saber o que verificar para ocorrer ou não um ataque. Pode ser **knowledge-based**, já com conhecimento prévio (através de regras) ou **behavior-based**, aprendendo com os dados disponíveis (através de treinamento).
+
+IPS são diferentes das Firewalls porque, embora ambas tenham regras, as firewalls também conseguem inspecionar *packet payloads*.
+
