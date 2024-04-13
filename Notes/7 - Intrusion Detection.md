@@ -20,5 +20,4 @@ para detecção de anomalias, através de *learning from data*: aprende o normal
 - `Packet traces`: recordam todo o traço que o levou até ao sítio, mas é difícil de manter e processar, porque custa storage;
 - `Counters`: routers contam quanto tráfico passa em cada link. É limitado em scope, porque está sujeito a link failures;
 - `Flow data`: IP flows, apanha o tráfico por cada link. Há um tradeoff: é mais simples que packet traces, tem mais informação que os counters, mas uma abertura de uma web page já pode gerar algumas dezenas de TCP flows, o que dificulta o management;
-- `Others`: 
-
+- `Others`: extração de dados customizados a partir de packets;
