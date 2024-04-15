@@ -10,7 +10,6 @@ Depois da autenticação do serviço ou cliente, autorização será dada para u
 
 **SSH** permite enviar plaintext por um canal cifrado, comunicando de forma segura. 
 
-Ainda assim é importante ter um método de autenticação por challenge (*handshake authentication protocol*), de modo a restringir hipótese de autenticadores maliciosos, usando também chaves assimétricas.
+Ainda assim é importante ter um método de autenticação por challenge (*handshake authentication protocol*), de modo a restringir hipótese de autenticadores maliciosos, usando também chaves assimétricas. Pode ser conseguido através de Smart Cards, que contém as keys públicas e privadas necessárias, ou através de Multifactor Authentication.
 
-
-
+**Single Sign-ON**, ou SSO, é a técnica usada para acessar um serviço ou um conjunto de serviços. Permite acesso sem registar o utilizador ou fazer check de passwords sempre em todos os websites.
