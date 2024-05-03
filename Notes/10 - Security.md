@@ -19,3 +19,4 @@ No entanto existem algumas vulnerabilidades do WPA2, como por exemplo **key-rein
 
 ## BGP
 
+Assegurar o transporte de mensagens pela rede, através de routers adjacentes. Usa-se um endereço especial, grandes caminhos e pequenos prefixos. Além disso, necessita-se de uma autorização de origem, path verification, e full-path verification.
