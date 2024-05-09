@@ -1,23 +1,22 @@
-# Project Submission
+# Presentation - My Part
 
-Smurf Attack
+## Plaintext
 
-Tipo de ataque DDoS, onde o atacante envia em broadcast para toda a rede um grande número de solicitações echo ICMP com IP de origem falsificado. Deste modo, os workers/pcs da rede respondem a esse IP, que é o IP da vítima (conseguido por sniffing, spoofing), garantindo que esta fica sem recursos para responder às solicitações legítimas.
-Fraggle attack é uma variação deste, em vez de ICMP usa-se UDP.
+Task Force Attack
 
-Protótipo:
+The growth of this group in the world of cybercrime has led to the emergence of a task force
+This taskforce is made up of agencies from 10 countries
+Operation Cronos: to control the attacks carried out by LockBit.
+This operation lasted several months and resulted in the compromise of LockBit's main platform and other critical infrastructures
 
-- Simulação de uma rede;
-- Um nó como vítima a rodar uma aplicação, um router, os restantes como workers;
-- Admite-se que a rede está comprometida (botnet);
-- Tecnologias usadas: Unix systems, scapy (python library), docker (?);
+This taskforce attack consisted of exploiting a software vulnerability (CVE-2023-3824).
+A critical PHP vulnerability that could lead to stack buffer overflow and potentially memory corruption or remote code execution. 
+Result: 
+34 servers around the world were brought down;
+Authorities has taken control of the technical infrastructure, as well as their dark web leak site, where they stored data stolen from victims in ransomware attacks.
 
-Explorações:
+## My Part
 
-- Exploração teórica da história por detrás deste tipo de ataque;
-- Simulação prática do Smurf attack no protótipo desenvolvido;
-- Mitigação teórica e prática deste ataque, como 
-    1. disabling IP directed broadcasts on routers
-    2. configuring network devices to filter or rate-limit ICMP traffic
-- Simulação prática do Fraggle attack como variante do Smurf attack;
-- Mitigação teórica e prática do Fraggle attack de forma semelhante ao anterior;
+A task force from 10 countries worked together to fight the cybercrime group LockBit in Operation Cronos.
+They exploited a PHP software vulnerability (CVE-2023-3824) to attack LockBit's main platform and other critical systems.
+This operation shut down 34 servers worldwide and took control of LockBit's technical infrastructure and dark web leak site.
