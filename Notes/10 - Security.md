@@ -23,7 +23,12 @@ Assegurar o transporte de mensagens pela rede, através de routers adjacentes. U
 
 ## Data Privacy
 
-A habilidade de indivíduos controlarem a sua informação pessoal
+A habilidade de indivíduos controlarem a sua informação pessoal, algo que a consiga identificar só por si. Isto pode ser consultado através de roubo, pelos services providers e até por *eavesdropping*. Para isso foi criado o GDPR, que é uma lei que obriga os service providers a terem cuidado com as informações pessoais dos seus clientes. Mesmo assim, podemos ter outro tipo de seguranças, como:
+
+- Secure Multiparty Computation;
+- Não enviar os dados por caminhos não confiáveis;
+- Ter cuidado com coisas simples, como sensores;
+- Ataques de privacidade podem ter relação com o domínio DNS, através da identificação de tráfico;
 
 ## Security Operations
 
