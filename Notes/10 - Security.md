@@ -32,3 +32,8 @@ A habilidade de indivíduos controlarem a sua informação pessoal, algo que a c
 
 ## Security Operations
 
+Usadas para testar e precaver problemas a nível de segurança dos sistemas e redes. Pode-se usar *monitor detection*, *logging*, *incident response status* e até *cyber threat intelligence*.
+
+`MISP`, ou Intelligence Sharing, usa-se para desenvolver inteligência entre entidades confiáveis, partilhando suspeitas. Existe um arquivo central, o `OSINT` (Open Source Intelligence).
+
+Pode-se também usar técnicas de *sandboxing* ou *honeypots*.
