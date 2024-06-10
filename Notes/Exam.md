@@ -160,7 +160,7 @@ Como o IP é connectionless e unreliable, dropar pacotes não serve porque não 
 
 - DNSSEC, e seus derivados problemas
 
-É mais provável que venha a receber ataques DoS, para garantir transações seguras a nível do URL. 
+É mais provável que venha a receber ataques DoS, para garantir transações seguras a nível do URL. Performance reduzida por conta das verificações, as zonas hierarquicas se forem grandes pode também reduzir a performance e converter-se em belos alvos de DoS.
 
 - Securing BGP
 
