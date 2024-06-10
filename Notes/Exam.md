@@ -122,25 +122,33 @@ Transparentes são TCP wrapper, não-transparentes usam SOCKS, negociam conexõe
 
 - Host-to-net VPNS: diferenças entre layer-free e layered VPNs.
 
-
+Layer-free ou Tunnel with IP Routing, funciona como uma IP gateway, que faz forward de pacotes e ações apenas. Com layer (bridge channel) funciona como uma VPN que faz forward de ethernet frames between remote host and the corporate network.
 
 - Intrusion Detection Systems: Host and Network, diferenças.
 
+No host, olhando para os dados e aplicações no sistema. Network olhando para os pacotes que estão na rede.
+
 - Intrusion Detection Systems: Knowledge and Behavioral, diferenças.
 
-Um deles é semelhante a VPNs, porque funciona com base em regras definidas.
+Knowledge transforma o conhecimento em regras, behavioral retira conhecimento a partir dos dados (mais adequada para anormal detection, usando os modelos, learning from data). Um deles é semelhante a VPNs, porque funciona com base em regras definidas.
 
 - Importantes Network data types para IDS.
+
+Packet traces, counters and flow data.
  
 ## Authentication Protocols
 
 - Como funcionam os Smart Cards?
 
-Importante dizer que 
+Importante dizer que as chaves não saem dos cartões, existindo todo um processamento/check dentro do microprocessador do cartão, sem passar nada a não ser um booleano para fora. Assim garante segurança. Adequado para quando não se conhece o computador onde se está a fazer a ação.
 
 - Que benefícios possui o SSO em relação aos logins tradicionais?
 
+Acesso aos mais variados serviços sem fazer um login individual ou um registo a cada serviço. Usado dentro de corporações.
+
 - Definir as principais etapas do TLS. Perfect Forward Secrecy, como é que o TLS garante isso?
+
+Handshake, 
 
 - 802.11
 
