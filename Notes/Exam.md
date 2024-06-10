@@ -148,14 +148,22 @@ Acesso aos mais variados serviços sem fazer um login individual ou um registo a
 
 - Definir as principais etapas do TLS. Perfect Forward Secrecy, como é que o TLS garante isso?
 
-Handshake, 
+Handshake, Protocol Negotiation. Há PFS porque a descoberta de chaves não constitui ameaça às sessões anteriores. Master key, key pairs and session keys.
 
 - 802.11
 
+Tem três fases: discovery, authentication and key management. Há garantias de integridade, confidencialidade em todas as chamadas efetuadas na rede.
+
 - IPSec
+
+Como o IP é connectionless e unreliable, dropar pacotes não serve porque não requer ordem. 
 
 - DNSSEC, e seus derivados problemas
 
+É mais provável que venha a receber ataques DoS, para garantir transações seguras a nível do URL. 
+
 - Securing BGP
+
+É um path vector protocol, há segurança se se criar conections TCP between routers e verificação de todo o caminho percorrido (full path verification).
 
 - Definições como Secury Multiparty Computation, Domain name attacks, MISP, OSINT, sandboxing and honeypots.
