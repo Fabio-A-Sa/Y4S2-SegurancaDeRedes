@@ -44,45 +44,85 @@ Antigamente a resposta do TLS envolvia um payload random de N bits que era pedid
 
 - Land Deniel (LAND)?
 
-
+TCP/UPD não estavam preparados para ter source/destination iguais, logo entravam em loop no sistema, gastando recursos.
 
 - Echo Chargen Attack?
 
+Echo requests enviam em payload a request, e ao poder haver spoofing do IP da vítima pode entrar em loop infinito.
+
 - TCP Session stablishment session spoofing?
+
+Se souber o sequence number, pois a sessão é estabelecida com base em incrementos.
 
 - TCP Hijaking?
 
+Spoofing de pacotes de modo a comprometer a sincronização das ligações TCP, a nível de sequence numbers e offsets, mesmo que TCP permita entrega de pacotes fora de ordem. Pode ficar em death-lock.
+
 - TCP Reset attack?
+
+Mandar requests RST para cortar ligações TCP.
 
 - Como funciona o DNS?
 
-DNS possui transition ID e UDP Ports.
+DNS possui transition ID e UDP Ports. Há três camadas: host, DNS Cache, DNS provider (external).
 
 - Enumera ataques possíveis ao DNS.
 
+Como nome mal escrito, modificar etc/hosts, spoofing do local cache para o host ficar com dados trocados (replay mais rápido que o legítimo), 
+
 - Diferenças entre o DNS poisoning a nível local e remote?
+
+Em modo remoto é mais complicado pois tem de fazer sniffing primeiro e adivinhar a Transaction ID and UDP Port. Além disso, se não acertar tem de esperar para que aquele dado fique inválido em cache, para um novo get a nível remoto. Para invalidar a cache é só pesquisar por <RANDOM_STRING>.up.pt, de modo a associar uma nova pesquisa externa.
+
+- DNS Rebinding?
+
+Quando um servidor não está acessível, e temos o SOP a garantir que nada externo é corrido dentro da máquina. Mas como SOP só olha para os domínios, são só vistos através do IP, logo acaba por conseguir forjar isso.
+
+- Tunneling & Exfiltration
+
+As Firewalls não costumam filtrar pedidos DNS e Exfiltration é o ato de mandar dados ao up.pt através de <RANDOM_STRING>.up.pt, pois estão no mesmo domínio.
 
 - Define o RIP protocol.
 
+Distance vector protocol. Anuncia a distância aos vizinhos. Ataques: mentir, distância negativa, loops.
+
 - Define o BGP protocol.
 
+Path vector protocol. Anuncia a distância e IDs aos vizinhos. Ataques com falsos updates.
+
 - Define o OSPF protocol.
+
+Link State protocol. Anuncia os seus routers vizinhos. Ataques são so mesmos, mas existem mecanismos de fallback que impedem que haja algo mais do que uma instabilidade.
 
 ## Active Defense
 
 - Definição de Firewall e VPN e suas diferenças.
 
+Filtram e controlam pacotes de acesso à rede, verificando portas e IP adresses. São implementadas com recurso a IPTables, que fazer fowarding dos pacotes. As firewalls são deployed com base em internas, externas, screenned networks e screening router.
+
 - O que faz o EBPF.
+
+Permite que o código/pacote seja executado em sandboxing pelo próprio kernel.
 
 - O que são NATs e diferenças em relação às Firewalls?
 
+NAT permite que vários endereços IP privados partilhem o mesmo IP público, por motivos de segurança e eficiência. Roteia os pacotes para o sítio certo. Modifica portanto os endereços IP dos pacotes da rede.
+
 - Firewalls stateless and statefull.
+
+Uma verifica sempre (adequada para IP), outra verifica com os dados com base no que já viu anteriormente (adequado a TCP, para não andar a interromper sempre a ligação).
 
 - Define e indica características de Zero Trust Security.
 
-- Firewall como Proxy: diferenças entre transparente e não transparente.
+Não confiar em nada, nem dentro nem fora da organização, verificando sempre tudo. Strong identification, validation, intelligente access control, dynamic adaptation.
 
-- Host-to-net VPNS: diferenças entre layer-free e layered VPNS.
+- Firewall como Proxy: diferenças entre transparente e não-transparente.
+
+Transparentes são TCP wrapper, não-transparentes usam SOCKS, negociam conexões com SOCKS server para authentication, têm configuração explícita e são mais complexas de utilizar/manipular.
+
+- Host-to-net VPNS: diferenças entre layer-free e layered VPNs.
+
+
 
 - Intrusion Detection Systems: Host and Network, diferenças.
 
